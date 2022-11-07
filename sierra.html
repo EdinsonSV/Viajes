@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sierra</title>
+    <!-- ------------Hojas de Estilo------------ -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="costasierraselva.css">
+</head>
+<body>
+    <!-- ------------Header------------ -->
+    <header class="header">
+        <marquee behavior="scroll" direction="" scrolldelay="60">🍃 Solo se vive una vez. Pero si lo haces bien, una vez es suficiente 🍃</marquee>
+    </header>
+    <!-- ------------Imagen Principal------------ -->
+    <div class="container">
+        <h1 class="titulo-principal">¡Descubre la <span style="--titulo-color:#ff8000">Sierra</span> con nosotros!</h1>
+        <div class="inicio">
+            <img class="inicio-img" src="sierra-inicio.jpg" alt="" loading="lazy">
+        </div>
+    </div>
+    <!-- ------------Contenedor de Cartas------------ -->
+    <div class="principal">
+        <h1>En el Perú, la región de la Sierra, también llamada Región Alto andina o Serranía es la región montañosa y de altiplanicies del país constituida por las tierras medias y altas de la cordillera de los Andes. En su mayor parte, constituye una zona de clima cálido o templado caracterizado por sus bajas precipitaciones.</h1>
+        <div class="contenedordecard">
+            <!-- ------------Cartas------------ -->
+            <template>
+                <div class="card">
+                    <div class="face front">
+                        <div class="imagencard">
+                            <img src="$imagen" alt="">
+                        </div>
+                        <div class="textcard">
+                            <h2>$nombre</h2>
+                        </div>
+                    </div>
+                    <div class="face back">
+                        <h2>$nombre</h2>
+                        <p>$descripcion</p>
+                        <div class="link"><a href="$enlace">Ver más</a></div>
+                    </div>
+                </div>
+            </template>
+            <!-- ------------------------ -->
+        </div>
+    </div>
+    <!-- ------------Hojas JavaScript------------ -->
+    <script type="text/javascript" src="sierra.js"></script>
+</body>
+</html>

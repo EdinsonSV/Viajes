@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="iconomundo.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Tours</title>
+    <!-- ------------Librerias------------ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- ------------Hojas de Estilo------------ -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="overflow: hidden">
+    <div class="centrado">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ------------Header------------ -->
+    <div id="inicio" style="top: 0px; position: absolute;"></div>
+    <header class="header">
+        <nav>
+            <img class="Logo" src="Logo.svg" alt="">
+            <img class="LogoScroll" src="LogoScroll.svg" alt="">
+            <ul>
+                <li class=""><a href="#inicio">Inicio</a></li>
+                <li class=""><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ------------Inicio------------ -->
+    <div class="home">
+        <h1 class="titulo-principal">¡Que comience la aventura!</h1>
+        <div class="container">
+            <div class="mapa"></div>
+            <div class="peru">
+            <ul>
+                <li class="destino" style="--color-regiones: #cccc00"><a href="costa.html">Costa</a><span></span></li>
+                <li class="destino" style="--color-regiones: #804000"><a href="sierra.html">Sierra</a><span></span></li>
+                <li class="destino" style="--color-regiones: #33cc33"><a href="selva.html">Selva</a><span></span></li>
+            </ul>
+            <div class="peru-img">
+                <img src="peru.png" alt="">
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------Footer------------ -->
+    <div class="contact">
+        <div class="footer" id="contacto" data-aos="zoom-in-down">
+            <ul>
+                <li class="footer-link">
+                    <a href="https://www.facebook.com/profile.php?id=100074871559086" target="_blank" style="--footer-color: #385898; --footer-color-secondary: #22365d">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+                </li>
+                <li class="footer-link">
+                    <a href="https://github.com/EdinsonSV" target="_blank" style="--footer-color: #242424; --footer-color-secondary: #000">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </li>
+                <li class="footer-link">
+                    <a href="https://www.instagram.com/edinson_.sanvil/" target="_blank" style="--footer-color: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); --footer-color-secondary: #991a70">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+            <h3>@Copyright 2022</h3>
+        </div>
+    </div>
+    <!-- ------------Hojas JavaScript------------ -->
+    <script type="text/javascript" src="main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            durations: 1000,
+            once: true
+        });
+    </script>
+</body>
+</html>
