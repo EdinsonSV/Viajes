@@ -38,7 +38,7 @@ body::-webkit-scrollbar-thumb:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 120vh;
     position: absolute;
     z-index: 1000000000;
 }
